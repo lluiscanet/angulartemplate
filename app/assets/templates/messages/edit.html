@@ -1,0 +1,8 @@
+<h1>Messages Edit</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="subject">Title<label/>
+    <input class="form-control" type="text" name="title" ng-model="message.subject">
+  </fieldset>
+  <input type="submit" ng-click="updateMessage(message)" ng-disabled="isSubmitting">
+</form>

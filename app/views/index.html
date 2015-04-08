@@ -1,0 +1,85 @@
+<html ng-app="Trotter">
+  <head>
+    <title>Trotter</title>
+    <link rel="stylesheet" href="/app/assets/css/foundation.css">
+    <link rel="stylesheet" href="/app/assets/css/normalize.css">
+    <link rel="stylesheet" href="/app/assets/css/app.css">
+  </head>
+  <body >
+    <div class="wrapper">
+      <div class="off-canvas-wrap" data-offcanvas>
+
+        <div class="sticky fixed">
+          <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="">Trotter</a></h1>
+              </li>
+            </ul>
+
+            <section class="top-bar-section">
+              <!-- Left Nav Section -->
+              <ul class="left">
+                <li class="divider"></li>
+                <li><a  href="/dest1/">Link 1</a></li>
+                <li class="divider"></li>
+                <li><a  href="/dest2/">Link 2</a></li>
+                <li class="divider"></li>
+              </ul>
+              <ul class="right">
+                <li class="divider"></li>
+                <li><a>Home</a></li>
+                <li class="divider"></li>
+                <li><a  href="#">Logout</a></li>
+                <li class="divider"></li>
+                <li><a id='search-toggle' class="right-off-canvas-toggle">Search</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+
+        <div class="inner-wrap">
+          <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+              <li><a>Item 1</a></li>
+              <li><a  href="#">Item 2</a></li>
+            </ul>
+          </aside>
+
+          <section class="main-section">
+            <div id="main-content" ng-view></div>
+          </section>
+
+          <a class="exit-off-canvas"></a>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+  <!-- vendor -->
+  <script src="/app/assets/js/vendors/modernizr.js"></script>
+  <script src="/app/assets/js/vendors/jquery-2.1.3.min.js"></script>
+  <script src="/app/assets/js/vendors/foundation.min.js"></script>
+  <script src="/app/assets/js/vendors/angular.js"></script>
+  <script src="/app/assets/js/vendors/angular-route.js"></script>
+  <script src="/app/assets/js/vendors/angular-resource.js"></script>
+
+  <!-- App -->
+  <script src="/app/assets/js/app.js"></script>
+  <script src="/app/assets/js/routes.js"></script>
+  <!-- Directives -->
+  <!-- Controllers -->
+  <script src="/app/assets/js/controllers/messagesCreateController.js"></script>
+  <script src="/app/assets/js/controllers/messagesEditController.js"></script>
+  <script src="/app/assets/js/controllers/messagesShowController.js"></script>
+  <script src="/app/assets/js/controllers/messagesIndexController.js"></script>
+  <!-- Services -->
+  <script src="/app/assets/js/services/message.js"></script>
+  <!-- Vendor Scripts -->
+  <script>
+    $(document).foundation();
+  </script>
+
+</html>
