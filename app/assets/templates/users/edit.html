@@ -1,0 +1,8 @@
+<h1>Users Edit</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="subject">Title<label/>
+    <input class="form-control" type="text" name="title" ng-model="user.username">
+  </fieldset>
+  <input type="submit" ng-click="updateUser(user)" ng-disabled="isSubmitting">
+</form>
